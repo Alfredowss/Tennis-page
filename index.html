@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="firstscreen">
+            <div class="leftSide">
+                <img src="./fill-2.svg" alt="">
+            </div>
+            <div>
+                <ul>
+                    <li>Inicio</li>
+                    <li>Acerca de nosotros</li>
+                    <li>Historia</li>
+                    <li>Contacto</li>
+                </ul>
+                <div class="header">
+                    <p>
+                        Las mejores raquetas para <br>jugar<b> Tennis</b>
+                    </p>
+                </div>
+                <button>
+                    ACERCA DE NOSOTROS
+                </button>
+            </div>
+        </div>
+        <div class="assetsscreen">
+
+        </div>
+        <div class="productsscreen">
+
+        </div>
+        <div class="motivationscreen">
+
+        </div>
+        <div class="contactscreen">
+
+        </div>
+    </div>
+</body>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+    .hero{
+        display: grid;
+        grid-template-rows: 785px 392px 468px 586px 203px;
+        grid-template-columns: 1440px;
+    }
+    .firstscreen{
+        display: grid;
+        grid-template-columns: 105px 1fr;
+        background-image: url('group.jpg');
+    }
+    .firstscreen ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin-top: 44px;
+        margin-left: 67px;
+        padding: 0%;
+        font-family: HelveticaNeue;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        color: white;
+        width: 579px;
+    }
+
+    .firstscreen img{
+        margin-top: 25px;
+        margin-left: 36px;
+        width: 37px;
+        height: 37px;
+    }
+
+    .firstscreen .leftSide{
+        border-right: solid 1px white;
+    }
+
+    .firstscreen .header{
+        margin-left: 67px;
+        margin-top: 144px;
+        margin-bottom: 0;
+        margin-right: 0;
+        width: 709px;
+        height: 257px;
+        font-family: HelveticaNeue;
+        font-size: 53px;
+        color: white;
+        line-height: 68px;
+        letter-spacing: -0.05px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .firstscreen p b {
+        color: #cbe346;
+    }
+    .firstscreen p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .firstscreen button{
+        width: 269px;
+        height: 53px;
+        background: rgba(0, 0, 0, 0);
+        border: 1px solid white;
+        border-radius: 26.5px;
+        color: white;
+        font-family: HelveticaNeue-Bold;
+        font-size: 13px;
+        line-height: 28px;
+        letter-spacing: 1.01px;
+        box-sizing: border-box;
+        position: relative;
+        margin-left: 67px;
+        top: -26.5px;
+    }
+
+
+</style>
+</html>

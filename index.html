@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
 </head>
 <body>
@@ -52,13 +53,63 @@
             </div>
         </div>
         <div class="productsscreen">
-
+            <div class="raquets">
+                <div class="header">
+                    <p>
+                        Nuestras <br>
+                        <b> Raquetas</b>
+                    </p>
+                </div>
+                <div class="description">
+                    <p>
+                        Conoce nuestras raquetas y <br>
+                        aprende a jugar Tennis como un <br>
+                        profesional.
+                    </p>
+                </div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <button>
+                   <img src="path-2.svg" width="9" height= "13" alt="">             
+                </button>
+                <button>
+                    <img src="path-2.svg" width="9" height= "13" alt="">
+                </button>
+            </div>
+            <div class="listofraquets">
+                <div class="raquet">
+                    <div>1</div>
+                </div>
+                <div class="raquet">
+                    <div>2</div>
+                </div>
+                <div class="raquet">
+                    <div>3</div>
+                </div>
+            </div>
         </div>
         <div class="motivationscreen">
 
         </div>
         <div class="contactscreen">
-
+            <ul class="anclas">
+                <li><b>inicio</li></b>
+                <li>Acerca de nosotros</li>
+                <li>Historia</li>
+                <li>Contacto</li>
+            </ul>
+            <ul class="networks">
+                <img src="linkedin.svg"></img>
+                <img src="vim.svg"></img>
+                <img src="instagram.svg"></img>
+                <img src="twitter.svg"></img>
+                <img src="facebook.svg"></img>
+            </ul>
+            <img class="pelota" src="fill-2.svg" alt="">
         </div>
     </div>
 </body>
@@ -69,6 +120,12 @@
         min-width: 100vw;
         min-height: 100vh;
     }
+
+    p{
+        margin: 0;
+    }
+
+
     .hero{
         display: grid;
         grid-template-rows: 785px 392px 468px 586px 203px;
@@ -209,8 +266,191 @@
         letter-spacing: 1.01px;
         padding-left: 38px;
         box-sizing: border-box;
-        background: #f3f4f8;;
+        background: #f3f4f8;
     }
+
+
+/* third page---- */
+
+.productsscreen{
+    display: grid;
+    grid-template-columns: 530px 1fr;
+}
+
+.productsscreen .raquets{
+    background: url('ball-color-court-1405355.jpg');
+}
+
+.productsscreen .header{
+    margin: 0;
+    margin-top: 38px;
+    margin-left: 200px;
+    margin-right: 71px;
+    width: 259px;
+    height: 151px;
+    font-family: HelveticaNeue;
+    font-size: 50px;
+    line-height: 64px;
+    letter-spacing: -0.06px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.productsscreen .description{
+    margin: 0;
+    margin-left: 200px;
+    margin-right: 27px;
+    margin-top: -2.3%;
+    width: 303px;
+    height: 122px;
+    font-family: HelveticaNeue;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.51px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.productsscreen ul{
+    margin: 0;
+    padding: 0;
+    margin-top: 14px;
+    margin-left: 200px;
+    display: flex;
+}
+
+.productsscreen ul li{
+    margin: 0;
+    list-style: none;
+    width: 8px;
+    height: 7.8px;
+    border-radius: 50%;
+    background: white;
+    margin-right: 24px;
+}
+
+.productsscreen button {
+    box-sizing: border-box;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin-top: 35.2px;
+}
+
+.productsscreen button:nth-of-type(1) {
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0);
+    margin-left: 190px;
+    margin-right: 19px;
+}
+
+.productsscreen button:nth-of-type(1) img{
+    transform: rotate(-180deg);
+}
+
+.productsscreen button:nth-of-type(2) {
+    background: #cbe346;
+}
+
+.productsscreen .listofraquets{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 344px;
+    grid-template-columns: 288px 288px 212px;
+    grid-column-gap: 36px;
+    grid-row-gap: 51px 76px;
+    padding-top: 51px;
+    padding-left: 52px;
+}
+
+.productsscreen .raquet{
+    background-image: url("group-10.jpg");
+    position: relative;
+}
+
+.productsscreen .raquet:nth-of-type(3){
+   margin-left: -5px;
+}
+
+.productsscreen .raquet div {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background: #cbe346;
+    color: white;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 2.11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 11px;
+    left: 15px;
+}
+
+/* four screen   --- -------- */
+
+.motivationscreen{
+    background: url("action.jpg");
+}
+
+
+/* five screen */
+
+.contactscreen{
+    background: #cbe346;
+    position: relative;
+}
+
+.contactscreen .anclas{
+    margin:0;
+    display: flex;
+    width: 451px;
+    height: 37px;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 64px;
+    margin-left: 78px;
+    font-family: HelveticaNeue;
+    font-size: 13px;
+    letter-spacing: 1.14px;
+    color: #2b3049;
+}
+
+.contactscreen .networks{
+    display: flex;
+    list-style: none;
+    margin-top: 13px;
+    margin-left: 78px;
+}
+
+.contactscreen .networks img{
+    margin-right: 12px;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.contactscreen .pelota{
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 77px;
+    right: 63px;
+    bottom: 71px;
+}
 
 </style>
 </html>

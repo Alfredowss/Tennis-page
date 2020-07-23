@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
 </head>
 <body>
     <div class="hero">
         <div class="firstscreen">
             <div class="leftSide">
-                <img src="./fill-2.svg" alt="">
+                <img src="./assets/images/fill-2.svg" alt="">
             </div>
             <div>
                 <ul>
@@ -52,7 +51,7 @@
                     </button>
             </div>
         </div>
-        <div class="productsscreen">
+         <div class="productsscreen"> 
             <div class="raquets">
                 <div class="header">
                     <p>
@@ -74,10 +73,10 @@
                     <li></li>
                 </ul>
                 <button>
-                   <img src="path-2.svg" width="9" height= "13" alt="">             
+                   <img src="./assets/images/path-2.svg" width="9" height= "13" alt="">             
                 </button>
                 <button>
-                    <img src="path-2.svg" width="9" height= "13" alt="">
+                    <img src="./assets/images/path-2.svg" width="9" height= "13" alt="">
                 </button>
             </div>
             <div class="listofraquets">
@@ -95,7 +94,7 @@
         <div class="motivationscreen">
 
         </div>
-        <div class="contactscreen">
+         <div class="contactscreen">
             <ul class="anclas">
                 <li><b>inicio</li></b>
                 <li>Acerca de nosotros</li>
@@ -103,14 +102,14 @@
                 <li>Contacto</li>
             </ul>
             <ul class="networks">
-                <img src="linkedin.svg"></img>
-                <img src="vim.svg"></img>
-                <img src="instagram.svg"></img>
-                <img src="twitter.svg"></img>
-                <img src="facebook.svg"></img>
+                <img src="./assets/images/linkedin.svg"></img>
+                <img src="./assets/images/vim.svg"></img>
+                <img src="./assets/images/instagram.svg"></img>
+                <img src="./assets/images/twitter.svg"></img>
+                <img src="./assets/images/facebook.svg"></img>
             </ul>
-            <img class="pelota" src="fill-2.svg" alt="">
-        </div>
+            <img class="pelota" src="./assets/images/fill-2.svg" alt="">
+        </div>  
     </div>
 </body>
 <style>
@@ -128,13 +127,15 @@
 
     .hero{
         display: grid;
-        grid-template-rows: 785px 392px 468px 586px 203px;
+        grid-template-rows:  785px 392px 468px 586px 203px;
         grid-template-columns: 1440px;
     }
+
+    
     .firstscreen{
         display: grid;
         grid-template-columns: 105px 1fr;
-        background-image: url('group.jpg');
+        background-image: url('./assets/images/group.jpg');
     }
     .firstscreen ul{
         list-style: none;
@@ -202,14 +203,57 @@
         position: relative;
         margin-left: 67px;
         top: -26.5px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
     }
 
+    @media only screen and (max-width: 900px){
+        .hero{
+            grid-template-rows:  auto auto 700px 200px 20vw;
+            grid-template-columns: 100vw;
+            font-size: 13px;
+            line-height: 13px;
+        }
+        .firstscreen{
+            grid-template-columns: 1fr;
+            background-size: cover;
+        }
+        .firstscreen ul{
+            width: 100%;
+            margin: 0;
+            padding-top: 25px;
+            padding-left: 5px;
+            padding-right: 5px;
+            box-sizing: border-box;
+            font-size: 13px;
+        }
+        .firstscreen .leftSide{
+            display: none;
+            visibility: hidden;
+        }
+        .firstscreen .header{
+            width: calc(100vw - 10%);
+            margin: 70px auto;
+            height: 30%;
+            font-size: 33px;
+            line-height: 33px;
+            letter-spacing: -0.005px;
+        }
+        .firstscreen button{
+            width: calc(100vw - 60%);
+            height: 35px;
+            margin-top: 35px;
+            margin-left: 40vw;
+            font-size: 13px;
+        }
+    }
     /* second screen */
 
     .assetsscreen{
         display: grid;
-        grid-template-columns: 480px 555px 151px;
+        grid-template-columns: 480px 555px 1fr;
         background: #f3f4f8;
+        padding-bottom: 35px;
     }
 
     .assetsscreen span{
@@ -269,7 +313,54 @@
         background: #f3f4f8;
     }
 
+    @media only screen and (max-width: 900px){
+        .assetsscreen{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
 
+        .assetsscreen span{
+            margin: 0px;
+            margin-top: 40px;
+            width: 100%;
+            text-align: end;
+            font-size: 13px;
+        }
+
+        .assetsscreen .header{
+            margin: 0px;
+            width: auto;
+            height: auto;
+            font-size: 23px;
+            line-height: 30px;
+            padding-left: 5px;
+            padding-top: 41px;
+        }
+
+
+        .assetsscreen .description{
+            width: auto;
+            height: auto;
+            margin: 0px;
+            font-size: 11px;
+            line-height: 15px;
+            padding-left: 5px;
+            padding-top: 17px;
+            margin-bottom: 25px;
+        }
+
+        .assetsscreen button{
+            padding: 0 10px;
+            width: auto;
+            height: auto;
+            margin: 120px 0px 0px 5px;
+            border-radius: 30%;
+            border: .5px solid #282e47;
+            font-size: 12px;
+            
+    }
+
+    }
 /* third page---- */
 
 .productsscreen{
@@ -278,7 +369,7 @@
 }
 
 .productsscreen .raquets{
-    background: url('ball-color-court-1405355.jpg');
+    background: url('./assets/images/ball-color-court-1405355.jpg');
 }
 
 .productsscreen .header{
@@ -349,6 +440,7 @@
 .productsscreen button:nth-of-type(1) {
     border: 1px solid white;
     background: rgba(0, 0, 0, 0);
+    margin-top: 50px;
     margin-left: 190px;
     margin-right: 19px;
 }
@@ -373,7 +465,7 @@
 }
 
 .productsscreen .raquet{
-    background-image: url("group-10.jpg");
+    background-image: url("./assets/images/group-10.jpg");
     position: relative;
 }
 
@@ -398,15 +490,76 @@
     left: 15px;
 }
 
+@media only screen and (max-width: 900px){
+.productsscreen{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.productsscreen .raquets{
+    background-size: cover;
+}
+
+
+.productsscreen .header{
+    margin: 0;
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+    margin-left: 30px;
+    padding: 0;
+    font-size: 23px;
+    line-height: 33px;
+}
+
+.productsscreen .description{
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.productsscreen button {
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+}
+
+.productsscreen ul{
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.productsscreen .listofraquets{
+    padding: 5px 20px 5px 10px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px 20px;
+    margin: 0;
+}
+
+.productsscreen .raquet{
+    background-size: cover;
+}
+
+}
+
+
 /* four screen   --- -------- */
 
 .motivationscreen{
-    background: url("action.jpg");
+    background: url("./assets/images/action.jpg");
+}
+
+@media only screen and (max-width: 900px){
+    .motivationscreen{
+        background-size: cover;  
+    }
 }
 
 
 /* five screen */
-
 .contactscreen{
     background: #cbe346;
     position: relative;
@@ -450,6 +603,125 @@
     top: 77px;
     right: 63px;
     bottom: 71px;
+}
+
+@media only screen and (max-width: 900px){
+        
+    .contactscreen .anclas{
+        margin:0;
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-left: 0px;
+        padding: 0 15px;
+        box-sizing: border-box;
+        font-size: 16px;
+        justify-content: space-between;
+    }
+
+    .contactscreen .networks{
+        display: flex;
+        list-style: none;
+        margin-top: 13px;
+        margin-left: 20px;
+    }
+
+    .contactscreen .networks img{
+        margin-top: 15px;
+        margin-right: 17px;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
+
+    .contactscreen .pelota{
+        width: 39px;
+        height: 39px;
+        position: absolute;
+        top: 80px;
+        right: 22px;
+    }
+}
+
+
+/*  letters responsive -----------------------------------------------------*/
+/* first screen */
+
+@media only screen and (max-width: 650px){
+        .hero{
+            font-size: 10px;
+            line-height: 10px;
+        }
+        .firstscreen ul{
+            font-size: 10px;
+        }
+        .firstscreen .header{
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: -0.005px;
+        }
+        .firstscreen button{
+            font-size: 10px;
+        }
+    }
+
+/* second screen */
+@media only screen and (max-width: 650px){
+        .assetsscreen span{
+            font-size: 10px;
+        }
+
+        .assetsscreen .header{
+            font-size: 20px;
+            line-height: 27px;
+        }
+
+
+        .assetsscreen .description{
+            font-size: 8px;
+            line-height: 12px;
+        }
+
+        .assetsscreen button{
+            font-size: 9px;   
+         }
+
+}
+/* third screen */
+@media only screen and (max-width: 650px){
+
+    .productsscreen .header{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .productsscreen .description{
+        font-size: 12px;
+    }
+
+}
+
+/* five screen */
+@media only screen and (max-width: 650px){
+        
+        .contactscreen .anclas{
+            font-size: 13px;
+        }
+
+        .contactscreen .networks img{
+            margin-top: 2px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .contactscreen .pelota{
+            width: 28px;
+            height: 28px;
+            top: 50px;
+        }
+
 }
 
 </style>
